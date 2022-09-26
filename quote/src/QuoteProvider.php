@@ -22,7 +22,7 @@ class QuoteProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/quote.php' => config_path('quote.php'),
+            __DIR__.'/../config/quote.php' => config_path('quote.php'),
         ], 'config');
     }
 }
