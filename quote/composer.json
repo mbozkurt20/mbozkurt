@@ -1,0 +1,63 @@
+{
+    "name": "mbozkurt/quote",
+    "description": "Startup Network",
+    "keywords": [
+        "laravel",
+        "write",
+        "page"
+    ],
+    "homepage": "https://github.com/mbozkurt20/quote.git",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mehmet Emin Bozkurt",
+            "email": "mbozkurt020@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "php": "^7.4|^8.0",
+        "fideloper/proxy": "^4.0",
+        "laravel/framework": "^8.0",
+        "laravel/tinker": "^1.0",
+        "mbozkurt/quote": "dev-master"
+    },
+
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/mbozkurt/quote"
+        }
+    ],
+
+
+    "autoload": {
+        "psr-4": {
+            "mbozkurt\\Quote\\": "src"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "mbozkurt\\Quote\\": "tests"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mbozkurt\\Quote\\QuoteProvider.php"
+            ],
+            "aliases": {
+                "Quote": "mbozkurt\\Quote\\Quote"
+            }
+        }
+    },
+
+    "config": {
+        "sort-packages": true
+    }
+
+}
